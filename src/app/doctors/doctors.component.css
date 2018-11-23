@@ -1,0 +1,65 @@
+.ourSpec{
+    margin:30px 0px;
+    font-weight:200;
+    text-align: center;
+
+}
+
+.doctors{
+    border: 1px solid black;
+    padding: 45px;
+    margin-bottom: 150px;
+}
+
+h3{
+    font-size: 20px;
+    font-weight:200;
+
+}
+
+.doctorTitle{
+    font-weight: 400;
+    text-align: center;
+}
+.doctorName{
+    text-align: center
+}
+
+.doctorDescription{
+    font-size: 19px;
+    text-align: center;
+    margin-top:20px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .doctorImage{
+        margin-left: 9%;
+    }
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .doctorImage{
+        margin-left: 20%;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .doctorImage{
+        margin-left: 30%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .doctorImage{
+        margin-left: 0%;
+    }
+}
+

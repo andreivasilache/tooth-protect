@@ -1,0 +1,76 @@
+<br>
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5" >
+    <h6>Register</h6>
+    <br>
+    <form (ngSubmit)="SubmitRegister(register)" #register="ngForm" >
+      <input type="text" class="form-control"
+              ngModel name="name"
+              required
+              placeholder="Name"
+      >
+      <br>
+      <input type="text" class="form-control"
+            ngModel name="firstName"
+            required
+            placeholder="First Name"
+      >
+      <br>
+
+      <input type="text" class="form-control"
+              ngModel name="email"
+              required email
+              placeholder="Email"
+      >
+      <br>
+
+      <input type="password" class="form-control"
+              ngModel name="password"
+              required password
+              placeholder="Password"
+      >
+      <br>
+
+      <input type="number" class="form-control"
+              ngModel name="age"
+              required
+              placeholder="Age"
+      >
+      <br>
+
+      <button type="submit" class="btn btn-success" [disabled]="!login.untouched && !register.valid">Register</button>
+      <br>
+      <br>
+      <button *ngIf="registerError" type="button" class="btn btn-danger">{{ registerError }} </button>
+    </form>
+  </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+    </div>
+
+  <div  class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+      <h6>Login</h6>
+      <br>
+      <form (ngSubmit)="SubmitLogin(login)" #login="ngForm">
+          <input type="text" class="form-control"
+          ngModel name="email"
+          required email
+          placeholder="Email"
+          >
+          <br>
+          <input type="password" class="form-control"
+              ngModel name="password"
+              required password
+              placeholder="Password"
+          >
+          <br>
+          <button class="btn btn-success" type="submit" [disabled]="!register.untouched && !login.valid">Login</button>
+          <br>
+          <br>
+          <button *ngIf="loginError" type="button" class="btn btn-danger">{{ loginError }} </button>
+      </form>
+  </div>
+
+
+
+</div>

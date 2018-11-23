@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-10">
+        <daypilot-scheduler [config]="config"
+        [events]="events"
+        #scheduler></daypilot-scheduler>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2">
+        <h6>Your events:</h6>
+        <h6 *ngIf="!events[0]">Your schedule is empty! </h6>
+        <div *ngFor="let events of events  ">
+            <hr>
+            <h5 [ngStyle]="{'color':events.color}">{{ events.text }}</h5>
+            <h5>Date: {{events.start | date }}</h5>
+            <h5 > Hour: {{ events.resource }} : 00 </h5>
+            <hr>
+
+        </div>
+        <button (click)="onSave()" class="btn btn-success" [disabled]="!events[0]||!userIsAuth()">{{ authTest }}</button>
+    </div>
+</div>
+
+

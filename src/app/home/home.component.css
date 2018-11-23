@@ -1,0 +1,63 @@
+
+.homeContainer{
+    padding: 0px;
+    min-width: 50%;
+    min-height: 50%;
+}
+.fas,.fab{
+    font-size: 4em;
+    padding-bottom: 9%;
+    text-align: center;
+}
+
+.col-md-9,.col-lg-9,.col-sm-9,.col-md-3,.col-lg-3,.col-sm-3{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+
+
+}
+
+.firstContainer{
+    color: white;
+    background-color: #0070b9;
+}
+.firstContainerButtons{
+    margin-bottom: 3% ;
+}
+.firstContainerButtons{
+
+}
+
+.secondContainer{
+    color: white;
+    background-color: #004F82;
+}
+
+.secondText,.firstText{
+    font-size: 98%;
+}
+#secondPart{
+    margin-top:80px;
+}
+
+.secondPartTitle{
+    color: #004F82;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+}
+.secondPartText{
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+.secondPartButton{
+    margin: 20px 0px;
+}
+
+.formsOnline{
+    margin-top:20px;
+}
+
+
