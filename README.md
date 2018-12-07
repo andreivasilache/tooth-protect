@@ -10,7 +10,9 @@ Application features: <br>
 -Schedule yourself <br>
 -See our Dentists <br>
 
+Application Link: https://tooth-protect.herokuapp.com/home  <br>
+Portfolio : http://vasilache-andrei.herokuapp.com/
+
+
 <img src="http://vasilache-andrei.herokuapp.com/portofolioGifs/toothProtect.gif">
 
-Application Link: https://tooth-protect.herokuapp.com/home  <br>
-Portofolio : http://vasilache-andrei.herokuapp.com/
